@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <table>
+            <tr> <th>"Title"</th> <th>"Date"</th> <th>"Link"</th> <th>"Location"</th> </tr>
+               {% for x in range(0, data|length) %} <tr>
+                    {% for k, v in data[x].items() %}
+                             <td>{{ v }}</td>
+                    {% endfor %} </tr>
+               {% endfor %}
+
+        </table>
+    </body>
+</html>
